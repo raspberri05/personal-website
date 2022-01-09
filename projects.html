@@ -1,6 +1,22 @@
 ---
 layout: default
-title: Projects
-description: This page is a work in progress, so there is nothing here yet
+title: Projects (Coming Soon)
+description: This page is a work in progress
 permalink: /projects/
 ---
+
+{% for project in site.projects %}
+  <div class="row" style="padding-left:15%; padding-right:15%">
+  
+    <div class="col-md-5">
+      <h3>{{ project.name }}</h3>
+      <p>{{ project.date }}</p>
+      <p>{{ project.description }}</p>
+    </div>
+
+    <div class="col-md-7">
+      <img src="assets/images/logo.jpg" width="100%" height="50%">  
+    </div>
+
+  </div>
+{% endfor %}
