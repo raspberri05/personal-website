@@ -1,7 +1,49 @@
+#content-desktop {display: block;}
+#content-mobile {display: none;}
+
+@media screen and (max-width: 768px) {
+
+#content-desktop {display: none;}
+#content-mobile {display: block;}
+
+}
+
 body {
-    font-family: 'Merriweather', serif !important;
+	font-family: 'Merriweather', serif !important;
 }
 
 p {
-    font-size: larger !important;
+	font-size: larger !important;
+}
+
+.resume {
+	width: 80% !important;
+	height: 100vh !important;
+}
+
+.resume_mobile {
+	width: 100% !important;
+	height: 100vh !important;
+}
+
+.button_link {
+	color: white !important;
+	text-decoration: none !important;
+}
+
+.button_link:hover {
+	text-decoration: underline !important;
+}
+
+i {
+	font-size: 3rem !important;
+	color: black !important;
+}
+
+hr {
+	color: black !important;
+}
+
+.bg_black {
+	background-color: black !important;
 }
