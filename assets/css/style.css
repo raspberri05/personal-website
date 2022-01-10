@@ -1,7 +1,7 @@
 #content-desktop {display: block;}
 #content-mobile {display: none;}
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
 
 #content-desktop {display: none;}
 #content-mobile {display: block;}
@@ -10,6 +10,9 @@
 
 body {
 	font-family: 'Merriweather', serif !important;
+	background-color: black !important;
+	color: white !important;
+	letter-spacing: 0.5px !important;
 }
 
 p {
@@ -17,7 +20,7 @@ p {
 }
 
 .resume {
-	width: 80% !important;
+	width: 70% !important;
 	height: 100vh !important;
 }
 
@@ -27,23 +30,32 @@ p {
 }
 
 .button_link {
-	color: white !important;
+	color: black !important;
 	text-decoration: none !important;
 }
 
-.button_link:hover {
-	text-decoration: underline !important;
+button {
+	background-color: white !important;
 }
 
 i {
 	font-size: 3rem !important;
-	color: black !important;
+	color: white !important;
 }
 
 hr {
-	color: black !important;
+	color: white !important;
 }
 
 .bg_black {
 	background-color: black !important;
+}
+
+.hover-span:hover {
+	border-width: 2px !important;
+	border-color: white !important;
+}
+
+h1 {
+	font-size: 60px !important;
 }
