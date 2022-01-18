@@ -6,7 +6,7 @@ home:
     p2: "Besides computer science, I am strong in academics and take Advanced Placement classes to challenge me, I love singing in choir, and I often volunteer at organizations locally and nationally."
 
 projects:
-  - name: "Wheelchair Object Detection"
+  - name: "Wheelchair Obstacle Sensing System"
     date: "Fall 2021"
     description: "Description"
   - name: "StockFalafel"
