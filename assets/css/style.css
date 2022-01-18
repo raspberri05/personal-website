@@ -1,13 +1,3 @@
-#content-desktop {display: block;}
-#content-mobile {display: none;}
-
-@media screen and (max-width: 900px) {
-
-#content-desktop {display: none;}
-#content-mobile {display: block;}
-
-}
-
 body {
 	font-family: 'Merriweather', serif !important;
 	background-color: black !important;
@@ -20,13 +10,18 @@ p {
 }
 
 .resume {
-	width: 70% !important;
 	height: 100vh !important;
 }
 
-.resume_mobile {
-	width: 100% !important;
-	height: 100vh !important;
+@media screen and (max-width: 900px) {
+	.resume {
+		width: 95% !important;
+	}
+}
+@media screen and (min-width: 900px) {
+	.resume {
+		width: 60% !important;
+	}
 }
 
 .button_link {
