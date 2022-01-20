@@ -4,22 +4,19 @@ title: Projects (Coming Soon)
 description: This page is a work in progress
 permalink: /projects/
 ---
-</br>
-</br>
-</br>
-</br>
 
 {% for project in site.projects %}
-  <div class="row" style="padding-left:15%; padding-right:15%;margin-top: -8%;margin-bottom: -8%">
+  <div class="row project-div">
 
     <div class="col-md">
-      <h2>{{ project.name }}</h2>
+      <a class="project-link" href="{{ project.link }}" target="_blank"><h3>{{ project.name }}</h3></a>
       <p>{{ project.date }}</p>
-      <p>{{ project.description }}</p>
+      <p class="project-p">{{ project.description }}</p>
     </div>
 
     <div class="col-md">
-      <img src="assets/images/logo.jpg" width="110%" height="60%">  
+      </br>
+      <img src="assets/images/logo.jpg" width="90%" height="60%">  
     </div>
 
   </div>

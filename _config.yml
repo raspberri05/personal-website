@@ -8,13 +8,16 @@ home:
 projects:
   - name: "Wheelchair Obstacle Sensing System"
     date: "Fall 2021"
-    description: "Description"
+    description: "For wheelchair users, it can be hard to see what's behind the chair, especially when backing up or turning, which can be dangerous because there is a high potential to hit an object or person. The aim of this project is to solve that problem by creating a low-cost device that can detect obstacles and warn the wheelchair user so they don't hit objects or people."
+    link: "https://github.com/vedant205/wheelchair-obstacle-sensing-system"
   - name: "StockFalafel"
     date: "Summer 2020"
-    description: "Description"
+    description: "Many stock tracking and analysis services often are cluttered and hard to navigate and use, so we wanted to create something clean and simple to use. StockFalafel is an easy-to-use comprehensive stock-tracking app to help investors track stocks, with a customizable watchlist, detailed stock information, and the day’s most important stocks."
+    link: "https://github.com/vedant205/stockfalafel"
   - name: "ChatterBox"
     date: "Spring 2020"
-    description: "Description"
+    description: "A user-friendly chat app built for students featuring direct messaging, group messaging, and simple tools for group moderation.We wanted to make this app as approachable for students as possible, so we kept features simple and added some fun perks, like a random group name generator."
+    link: "https://github.com/vedant205/chatterbox"
 
 
   
