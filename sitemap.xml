@@ -1,35 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-  <url>
-    <loc>https://vedantsinghania.com/</loc>
-    <lastmod>2022-04-30</lastmod>
-    <priority>1.00</priority>
-    <image:image>
-      <image:loc>https://vedantsinghania.com/assets/images/logo.png</image:loc>
-      <image:caption>A portrait image of me</image:caption>
-      <image:geo_location>Palo Alto, California</image:geo_location>
-      <image:title>image_of_vedant_singhania</image:title>
-      <!-- <image:license>http://example.com/image-license</image:license> -->
-    </image:image>
-  </url>
-  <url>
-    <loc>https://vedantsinghania.com/projects/</loc>
-    <lastmod>2022-04-30</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://vedantsinghania.com/resume/</loc>
-    <lastmod>2022-04-30</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://vedantsinghania.com/assets/documents/chairSense_Research_Paper.pdf</loc>
-    <lastmod>2022-04-30</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>https://vedantsinghania.com/assets/documents/Vedant_Singhania_Resume.pdf</loc>
-    <lastmod>2022-04-30</lastmod>
-    <priority>0.64</priority>
-  </url>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://vedantsinghania.com/</loc>
+  <lastmod>2022-05-02T00:00:25+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://vedantsinghania.com/projects/</loc>
+  <lastmod>2022-05-02T00:00:25+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://vedantsinghania.com/resume/</loc>
+  <lastmod>2022-05-02T00:00:25+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://vedantsinghania.com/assets/documents/chairSense_Research_Paper.pdf</loc>
+  <lastmod>2022-05-02T00:00:22+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://vedantsinghania.com/assets/documents/Vedant_Singhania_Resume.pdf</loc>
+  <lastmod>2022-05-02T00:00:22+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
 </urlset>
