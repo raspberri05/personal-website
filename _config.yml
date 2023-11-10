@@ -10,6 +10,7 @@ projects:
     date: "Spring 2022"
     description: "An app powered by the Spotify API that shows your your top songs, artists, and recently played songs."
     link: "https://tunestats.herokuapp.com"
+    video: "https://tunestats.herokuapp.com/static/media/demo.1a1507546979b0187dcb.png"
   - name: "chairSense"
     date: "Fall 2021"
     description: "For wheelchair users, it can be hard to see what's behind the chair, especially when backing up or turning, which can be dangerous because there is a high potential to hit an object or person. The aim of this project is to solve that problem by creating a low-cost device that can detect obstacles and warn the wheelchair user so they don't hit objects or people."
