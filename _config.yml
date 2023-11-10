@@ -2,15 +2,14 @@ name: "Vedant Singhania"
 
 home:
   about:
-    p1: "My name is Vedant Singhania, from Palo Alto, California. I have been coding since I was 12, starting with MIT Scratch. Since then I have become proficient at 4 programming languages by self-teaching and taking computer science classes in school, which I have used to create applications to help people in their everyday lives. More recently, I have delved into the world of Arduino and C/C++ in order to create low-cost products to assist wheelchair users like me to be able to navigate the world more independently."
+    p1: "My name is Vedant Singhania, and I am from Palo Alto, California. I have been coding since I was 12, starting with MIT Scratch. Since then I have become proficient at 4 programming languages by self-teaching and taking computer science classes in school, which I have used to create applications to help people in their everyday lives. More recently, I have delved into the world of Arduino and C/C++ in order to create low-cost products to assist wheelchair users like me to be able to navigate the world more independently."
     p2: "Besides computer science, I am strong in academics and take Advanced Placement classes to challenge me, I love singing in choir, and I often volunteer at organizations locally and nationally."
 
 projects:
   - name: "Tunestats"
     date: "Spring 2022"
-    description: "An app powered by the Spotify API that shows your your top songs, artists, and recently played songs."
+    description: "An app powered by the Spotify API that shows your top songs, artists, and recently played songs."
     link: "https://tunestats.herokuapp.com"
-    video: "https://tunestats.herokuapp.com/static/media/demo.1a1507546979b0187dcb.png"
   - name: "chairSense"
     date: "Fall 2021"
     description: "For wheelchair users, it can be hard to see what's behind the chair, especially when backing up or turning, which can be dangerous because there is a high potential to hit an object or person. The aim of this project is to solve that problem by creating a low-cost device that can detect obstacles and warn the wheelchair user so they don't hit objects or people."
@@ -20,7 +19,7 @@ projects:
     papername: "View chairSense Research Paper"
   - name: "StockFalafel"
     date: "Summer 2020"
-    description: "Many stock tracking and analysis services often are cluttered and hard to navigate and use, so we wanted to create something clean and simple to use. StockFalafel is an easy-to-use comprehensive stock-tracking app to help investors track stocks, with a customizable watchlist, detailed stock information, and the day’s most important stocks."
+    description: "Many stock tracking and analysis services are often cluttered and hard to navigate and use, so we wanted to create something clean and simple. StockFalafel is an easy-to-use comprehensive stock-tracking app to help investors track stocks, with a customizable watchlist, detailed stock information, and the day’s most important stocks."
     link: "https://github.com/raspberri05/stockfalafel"
   - name: "ChatterBox"
     date: "Spring 2020"
