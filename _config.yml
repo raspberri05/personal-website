@@ -6,6 +6,10 @@ home:
     p2: "Besides majoring in and having a deep passion for computer science, I am strong in my academics, I love singing in choir, and I often volunteer in the community."
 
 projects:
+  - name: "Taskorial"
+    date: "January 2024 - Present"
+    description: "A web application to keep track of your tasks with more features coming soon"
+    link: "https://taskorial.com/"
   - name: "Tunestats"
     date: "Spring 2022"
     description: "An app powered by the Spotify API that shows your top songs, artists, and recently played songs."
