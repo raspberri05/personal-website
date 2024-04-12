@@ -1,3 +1,15 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+
+  background-color: black;
+  color: white;
+  letter-spacing: 0.5px;
+}
+
+p {
+  font-size: 20px;
+}
 
 #content-desktop {
   display: block;
@@ -19,13 +31,6 @@
 
 }
 
-body {
-  font-family: 'Merriweather', serif;
-  background-color: black;
-  color: white;
-  letter-spacing: 0.5px;
-}
-
 img,
 iframe,
 a {
@@ -35,10 +40,6 @@ a {
 
 nav {
   z-index: 9999;
-}
-
-p {
-  font-size: larger;
 }
 
 button {

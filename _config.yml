@@ -2,17 +2,17 @@ name: "Vedant Singhania"
 
 home:
   about:
-    p1: "My name is Vedant Singhania and I am from Palo Alto, California. I have been coding since I was 12 and since then, I have become highly proficient in HTML, Python, Java, and JavaScript, and various frameworks, I have taken college-level computer science courses in high school, and I am now in the midst of my first year as a computer science major at San Jose State University. While I enjoy working on my own projects to help people in their everyday lives, I also have a passion for contributing to open source code in the community."
-    p2: "Besides majoring in and having a deep passion for computer science, I am strong in my academics, I love singing in choir, and I often volunteer in the community."
+    p1: "Welcome to my portfolio website! My name is Vedant Singhania and I am from Palo Alto, California. I have been coding since I was 12 and since then, I have become highly proficient in HTML, Python, Java, and JavaScript, and various frameworks and libraries, I have taken college-level computer science courses in high school, and I am now in the midst of my first year as a computer science major at San Jos&eacute; State University. While I enjoy working on my own projects to help people in their everyday lives, I also have a passion for contributing to open source code in the community."
+    p2: "Besides majoring in and having a deep passion for computer science, I am strong in my academics, I love singing in choir and making music, and I often volunteer in the community."
 
 projects:
   - name: "Taskorial"
-    date: "January 2024 - Present"
-    description: "A web application to keep track of your tasks with more features coming soon"
+    date: "Spring 2024 - Currently in development"
+    description: "A full-stack web application to keep track of your tasks, with Google Gemini-powered AI integration in active development. I built this using React for the frontend, Express for the backend, and MongoDB for the database. This project also integrates Google's Gemini AI via a server-side API."
     link: "https://taskorial.com/"
   - name: "Tunestats"
     date: "Spring 2022"
-    description: "An app powered by the Spotify API that shows your top songs, artists, and recently played songs."
+    description: "A full-stack web application for Spotify users to see listening stats such as top songs and artists, and to view recently played songs. This was built with React, Express, and the Spotify API. This was my first major full stack web development project. "
     link: "https://tunestats.herokuapp.com"
   - name: "chairSense"
     date: "Fall 2021"
@@ -21,14 +21,6 @@ projects:
     video: "https://www.youtube.com/embed/z72_hVvBnQc"
     paper: "assets/documents/chairSense_Research_Paper.pdf"
     papername: "View chairSense Research Paper"
-  - name: "StockFalafel"
-    date: "Summer 2020"
-    description: "Many stock tracking and analysis services are often cluttered and hard to navigate and use, so we wanted to create something clean and simple. StockFalafel is an easy-to-use comprehensive stock-tracking app to help investors track stocks, with a customizable watchlist, detailed stock information, and the day’s most important stocks."
-    link: "https://github.com/raspberri05/stockfalafel"
-  - name: "ChatterBox"
-    date: "Spring 2020"
-    description: "A user-friendly chat app built for students featuring direct messaging, group messaging, and simple tools for group moderation.We wanted to make this app as approachable for students as possible, so we kept features simple and added some fun perks, like a random group name generator."
-    link: "https://github.com/raspberri05/chatterbox"
 
 
   

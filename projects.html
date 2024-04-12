@@ -6,7 +6,7 @@ permalink: /projects/
 ---
 
 {% for project in site.projects %}
-<div class="row project-div">
+<div class="project-div">
 
   <div class="col-md">
     <a class="project-link" href="{{ project.link }}" target="_blank">
@@ -27,13 +27,16 @@ permalink: /projects/
     <button type="button" class="btn btn-md text"><a class="button_link" href="/{{ project.paper }}" target="_blank">{{
         project.papername }}</a></button>
     {% endif %}
+    <br/>
+    <br/>
   </div>
 
   <div class="col-md">
-    </br>
-    <iframe width="100%" height="315" src="{{ project.video }}" title="YouTube video player" frameborder="0"
+    {% if project.video == "https://www.youtube.com/embed/z72_hVvBnQc" %}
+    <iframe width="50%" height="315" src="{{ project.video }}" title="YouTube video player" frameborder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
       allowfullscreen></iframe>
+    {% endif %}
   </div>
 </div>
 {% endfor %}
