@@ -1,0 +1,5 @@
+{
+  "redirects": [
+    { "source": "/blog/", "destination": "https://blog.vedantsinghania.com/", "statusCode": 301 }
+  ]
+}
