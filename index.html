@@ -1,23 +1,23 @@
 ---
 layout: default
-title: About Me
-description: Welcome to my porfolio website! Here you can learn more about me, see my independent projects, or take a look at my resume.
 ---
 
-<div class="row">
+{% include hero-section.html %}
 
-  <div class="col-sm-auto text-center">
-    <img src="assets/images/logo.png" width="300px" height="300px" alt="image_of_water_body">
-    </br>
-    </br>
-    </br>
-  </div>
+{% include about-section.html %}
 
-  <div class="col">
-    &nbsp;
-    <p>{{ site.home.about.p1 }}</p>
-    </br>
-    <p>{{ site.home.about.p2 }}</p>
-  </div>
+{% include skills-section.html %}
 
-</div>
+{% include experience-section.html %}
+
+{% include education-section.html %}
+
+{% include services-section.html %}
+
+{% include portfolio-section.html %}
+
+{% include testimonial-section.html %}
+
+{% include client-section.html %}
+
+{% include blog-section.html %}

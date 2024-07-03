@@ -1,0 +1,15 @@
+---
+layout: page
+title: Blog
+---
+<!-- blog -->
+<section class="section">
+  <div class="container">
+    <div class="row">
+      {% for post in site.posts %}
+      {% include post.html %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+<!-- /blog -->

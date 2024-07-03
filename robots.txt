@@ -1,3 +1,0 @@
-Sitemap: https://vedantsinghania.com/sitemap.xml/
-User-agent: *
-Disallow:

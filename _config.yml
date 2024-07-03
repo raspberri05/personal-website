@@ -1,28 +1,34 @@
-name: "Vedant Singhania"
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
-home:
-  about:
-    p1: "Welcome to my portfolio website! My name is Vedant Singhania and I am from Palo Alto, California. I have been coding since I was 12 and since then, I have become highly proficient in HTML, Python, Java, and JavaScript, and various frameworks and libraries, I have taken college-level computer science courses in high school, and I am now in the midst of my first year as a computer science major at San Jos&eacute; State University. While I enjoy working on my own projects to help people in their everyday lives, I also have a passion for contributing to open source code in the community."
-    p2: "Besides majoring in and having a deep passion for computer science, I am strong in my academics, I love singing in choir and making music, and I often volunteer in the community."
+# Build settings
+markdown: kramdown
+permalink: pretty
+plugins:
+  - jekyll-sitemap
+compress_html:
+  clippings: all
+  comments: all
+  startings: [html, head, body]
 
-projects:
-  - name: "Taskorial"
-    date: "Spring 2024 - Currently in development"
-    description: "A full-stack web application to keep track of your tasks, with Google Gemini-powered AI integration in active development. I built this using React for the frontend, Express for the backend, and MongoDB for the database. This project also integrates Google's Gemini AI via a server-side API."
-    link: "https://taskorial.com/"
-  - name: "Tunestats"
-    date: "Spring 2022"
-    description: "A full-stack web application for Spotify users to see listening stats such as top songs and artists, and to view recently played songs. This was built with React, Express, and the Spotify API. This was my first major full stack web development project. "
-    link: "https://tunestats.herokuapp.com"
-  - name: "chairSense"
-    date: "Fall 2021"
-    description: "For wheelchair users, it can be hard to see what's behind the chair, especially when backing up or turning, which can be dangerous because there is a high potential to hit an object or person. The aim of this project is to solve that problem by creating a low-cost device that can detect obstacles and warn the wheelchair user so they don't hit objects or people."
-    link: "https://github.com/raspberri05/chairsense"
-    video: "https://www.youtube.com/embed/z72_hVvBnQc"
-    paper: "assets/documents/chairSense_Research_Paper.pdf"
-    papername: "View chairSense Research Paper"
+# Pages Path
+defaults:
+  - scope:
+      path: "_pages"
+    values:
+      permalink: /:basename:output_ext
 
+include:
+  - _pages
 
-  
+sass:
+  sass_dir: assets/scss
+  style: compressed
 
-
+# Exclude from processing.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE.text
+  - README.md
+  - SECURITY.md

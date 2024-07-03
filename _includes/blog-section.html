@@ -1,0 +1,14 @@
+<!-- blog -->
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2 class="section-title">Blogs</h2>
+      </div>
+      {% for post in site.posts offset:0 limit:3 %}
+      {% include post.html %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+<!-- /blog -->

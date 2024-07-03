@@ -1,0 +1,43 @@
+---
+layout: default
+---
+<!-- page title -->
+<section class="page-title-alt bg-primary position-relative">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1 class="text-white font-tertiary">{{ page.title }}</h1>
+      </div>
+    </div>
+  </div>
+  <!-- background shapes -->
+  <img src="{{ site.baseurl }}/assets/images/illustrations/leaf-bg-top.png" alt="illustrations" class="bg-shape-1 w-100">
+  <img src="{{ site.baseurl }}/assets/images/illustrations/dots-group-sm.png" alt="illustrations" class="bg-shape-2">
+  <img src="{{ site.baseurl }}/assets/images/illustrations/leaf-yellow.png" alt="illustrations" class="bg-shape-3">
+  <img src="{{ site.baseurl }}/assets/images/illustrations/leaf-orange.png" alt="illustrations" class="bg-shape-4">
+  <img src="{{ site.baseurl }}/assets/images/illustrations/dots-group-cyan.png" alt="illustrations" class="bg-shape-5">
+  <img src="{{ site.baseurl }}/assets/images/illustrations/leaf-cyan-lg.png" alt="illustrations" class="bg-shape-6">
+</section>
+<!-- /page title -->
+
+<!-- about -->
+<section class="section pt-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <p>{{ content }}</p>
+        <a href="https://docs.google.com/document/d/1wdp6i4hQzrOrHJ3F5tNLUjfWV7aWq6WThbARi1IGyx8/export?format=pdf">
+          <button style="background-color: black; color: white; border-radius: 4px; font-size: 1.1rem; padding: 10px 20px;">Download Resume</button>
+        </a>
+      </div>
+      
+      <div class="col-md-4 text-center drag-lg-top">
+        <div class="shadow-down mb-4">
+          <img src="{{ site.baseurl }}/{{ page.image }}" alt="{{ page.author }}" class="img-fluid w-100 rounded-lg border-thick border-white">
+        </div>
+        <h4>{{ page.author }}</h4>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /about -->
