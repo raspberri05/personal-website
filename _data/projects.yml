@@ -1,8 +1,8 @@
 - name: ChairSense
-  image: https://cdn.pixabay.com/photo/2015/01/08/18/27/startup-593341_960_720.jpg
-  link:
+  image: https://cdn.pixabay.com/photo/2019/03/01/11/41/disabled-4027745_1280.jpg
+  link: https://github.com/raspberri05/chairSense
   description: For wheelchair users, it can be hard to see what's behind the chair, especially when backing up or turning, which can be dangerous because there is a high potential to hit an object or person. The aim of this project is to solve that problem by creating a low-cost device that can detect obstacles and warn the wheelchair user so they don't hit objects or people.
 - name: Tunestats
-  link:
-  image: https://cdn.pixabay.com/photo/2015/01/09/11/08/startup-594090_960_720.jpg
+  link: https://github.com/raspberri05/tunestats
+  image: https://cdn.pixabay.com/photo/2016/09/08/21/09/piano-1655558_1280.jpg
   description: A full stack Next.js application that uses the Last.FM API to show users snapshots of their listening habits.
