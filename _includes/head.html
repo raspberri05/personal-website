@@ -1,29 +1,7 @@
 <head>
-  <meta charset="utf-8">
-  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.data.settings.title }}{% endif %}</title>
-
-  <!-- mobile responsive meta -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="{%if page.description%}{{page.description}}{%else%}{{site.data.settings.description}}{%endif%}">
-  
-  <!-- theme meta -->
-  <meta name="theme-name" content="kross-jekyll" />
-
-    
-  {% if site.author %}
-  <meta name="author" content="{{ . }}">
-  {% endif %}
-  
-  <!-- ** Plugins Needed for the Project ** -->
-  {% for css in site.data.plugins.css %}
-  <link rel="stylesheet" href="{{ css | relative_url }}">
-  {% endfor %}
-
-  <!-- Main Stylesheet -->
-  <link href="{{ '/assets/scss/style.css' | relative_url }}" rel="stylesheet">
-
-  <!--Favicon-->
-  <link rel="shortcut icon" href="{{ '/assets/images/about/logo_square.jpg' | relative_url }} " type="image/x-icon">
-  <link rel="icon" href="{{ '/assets/images/about/favicon.png' | relative_url }} " type="image/x-icon">
-
+    {% include meta.html %}
+    <title>{{site.title}}</title>
+    <link rel="stylesheet" href="{% if site.baseurl %}{{site.baseurl}}{% else %}{% endif %}/assets/css/style.css">
+    <script src="https://kit.fontawesome.com/6a97161b76.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="{% if site.favicon-url %}{{site.favicon-url}}{% else %}{{ 'assets/images/logo.png' | absolute_url }}{% endif %}" type="image/x-icon">
 </head>
