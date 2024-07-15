@@ -8,6 +8,7 @@ body {
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth !important;
     transition: all 0.25s ease;
+    background-color: black;
 }
 
 
@@ -19,17 +20,17 @@ body {
 
 /* Track */
 ::-webkit-scrollbar-track {
-    background: white !important;
+    background: black !important;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #363636 !important;
+    background: lightgray !important;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: black !important;
+    background: lightgray !important;
 }
 
 ::placeholder {
