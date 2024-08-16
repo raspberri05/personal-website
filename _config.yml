@@ -7,7 +7,7 @@ url: ''
 baseurl: 
 
 # Title of the Site
-title: Vedant Singhania
+title: Naya Singhania
 # Description of the Site
 description: Software Developer
 # URL of Image of the Site
@@ -22,13 +22,13 @@ heroimage: https://images.pexels.com/photos/220444/pexels-photo-220444.jpeg?auto
 
 # Social Media and Contact
 # If you don't want to use any icon, you can leave them blank.
-email: vedant.singhania@gmail.com
-linkedin_username: vedantsinghania05
+email: naya.singhania@gmail.com
+linkedin_username: nayasinghania
 github_username:  raspberri05
 youtube_channel_id: "@raspberri05"
 
 # Name of the Author
-author-name: Vedant Singhania
+author-name: Naya Singhania
 # URL for the Image of the Author
 author-image: assets/images/logo.png
 # 60 Words About the Author
