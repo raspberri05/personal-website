@@ -1,10 +1,11 @@
 ---
 import NavBar from "@/components/NavBar.astro";
-import { ModeToggle } from "@/components/ModeToggle"
+import { ModeToggle } from "@/components/ModeToggle";
 import Footer from "@/components/Footer.astro";
 
 import "@/styles/globals.css";
 import "@fontsource/roboto/500.css";
+import BaseLayout from "./BaseLayout.astro";
 
 const { title } = Astro.props;
 ---
@@ -33,26 +34,13 @@ const { title } = Astro.props;
   }
 </script>
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{`Naya Singhania | ${title}`}</title>
-    <meta name="description" content="My personal website" />
-    <link rel="icon" href="/favicon.jpg" />
-  </head>
-  <body>
-    <NavBar />
-    <hr />
-    <div class="container mx-4 md:mx-auto min-h-[86vh]">
-      <br />
-      <slot />
-    </div>
-    <div class="fixed bottom-4 right-4">
-      <ModeToggle client:load />
-    </div>
-    <hr />
-    <br />
-    <Footer />
-  </body>
-</html>
+<BaseLayout title={title}>
+  <NavBar />
+  <div class="container mx-4 md:mx-auto min-h-[86vh]">
+    <slot />
+  </div>
+  <div class="fixed bottom-4 right-4">
+    <ModeToggle client:load />
+  </div>
+  <Footer />
+</BaseLayout>
