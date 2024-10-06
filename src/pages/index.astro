@@ -1,7 +1,16 @@
 ---
-import Default from "../layouts/Default.astro"
+import { Button } from "@/components/ui/button";
+import Default from "../layouts/Default.astro";
 ---
 
 <Default title="Home">
-  <h1>Welcome to my portfolio!</h1>
+  <div class="flex flex-col h-[75vh] text-center justify-center items-center">
+    <div class="text-[6rem]">Naya Singhania</div>
+    <h1>CS @ SJSU | Fullstack Developer</h1>
+    <br />
+    <a href="/about">
+      <Button><p class="text-xl">About Me</p></Button>
+    </a>
+  </div>
+  <br />
 </Default>

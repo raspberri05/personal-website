@@ -1,50 +1,58 @@
 ---
-import {NavBar} from '@/components/NavBar';
-import { ModeToggle } from '@/components/ModeToggle';
-import { Footer } from '@/components/Footer';
+import { NavBar } from "@/components/NavBar";
+import { ModeToggle } from "@/components/ModeToggle";
+import { Footer } from "@/components/Footer";
 
-import '@/styles/globals.css'
-import '@fontsource/roboto/500.css';
+import "@/styles/globals.css";
+import "@fontsource/roboto/500.css";
 
 const { title } = Astro.props;
 ---
 
 <script is:inline>
-	const getThemePreference = () => {
-		if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
-			return localStorage.getItem('theme');
-		}
-		return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-	};
-	const isDark = getThemePreference() === 'dark';
-	document.documentElement.classList[isDark ? 'add' : 'remove']('dark');
- 
-	if (typeof localStorage !== 'undefined') {
-		const observer = new MutationObserver(() => {
-			const isDark = document.documentElement.classList.contains('dark');
-			localStorage.setItem('theme', isDark ? 'dark' : 'light');
-		});
-		observer.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
-	}
+  const getThemePreference = () => {
+    if (typeof localStorage !== "undefined" && localStorage.getItem("theme")) {
+      return localStorage.getItem("theme");
+    }
+    return window.matchMedia("(prefers-color-scheme: dark)").matches
+      ? "dark"
+      : "light";
+  };
+  const isDark = getThemePreference() === "dark";
+  document.documentElement.classList[isDark ? "add" : "remove"]("dark");
+
+  if (typeof localStorage !== "undefined") {
+    const observer = new MutationObserver(() => {
+      const isDark = document.documentElement.classList.contains("dark");
+      localStorage.setItem("theme", isDark ? "dark" : "light");
+    });
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ["class"],
+    });
+  }
 </script>
 
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{`Naya Singhania | ${title}`}</title>
-    <meta name="description" content="My personal website">
-    <link rel="icon" href="/favicon.jpg">
+    <meta name="description" content="My personal website" />
+    <link rel="icon" href="/favicon.jpg" />
   </head>
   <body>
-    <NavBar client:load/>
-    <div class="container mx-4 md:mx-auto min-h-[88vh]">
+    <NavBar client:load />
+    <hr />
+    <div class="container mx-4 md:mx-auto min-h-[86vh]">
       <br />
       <slot />
     </div>
     <div class="fixed bottom-4 right-4">
-      <ModeToggle client:load/>
+      <ModeToggle client:load />
     </div>
+    <hr />
+    <br />
     <Footer />
   </body>
 </html>
