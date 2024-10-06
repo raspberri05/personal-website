@@ -1,6 +1,7 @@
 ---
+import LinkBtn from "@/components/LinkBtn.astro";
 import PageLayout from "../layouts/PageLayout.astro";
-import { paragraphs } from "@/content/data/about.json";
+import { paragraphs, resume } from "@/content/data/about.json";
 ---
 
 <PageLayout title="About" header="About Me">
@@ -12,4 +13,5 @@ import { paragraphs } from "@/content/data/about.json";
       </>
     ))
   }
+  <LinkBtn text="View Resume" href={resume} target="_blank" />
 </PageLayout>

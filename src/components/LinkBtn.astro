@@ -1,8 +1,8 @@
 ---
 import { Button } from "@/components/ui/button";
-const { children, href } = Astro.props;
+const { text, href, size, target = "_self" } = Astro.props;
 ---
 
-<a href={href}>
-  <Button variant="link">{children}</Button>
+<a href={href} target={target}>
+  <Button variant="link"><p class={`text-${size}`}>{text}</p></Button>
 </a>
