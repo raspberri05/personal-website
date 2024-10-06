@@ -1,20 +1,15 @@
 ---
-import Default from "../layouts/Default.astro";
+import PageLayout from "../layouts/PageLayout.astro";
 import { paragraphs } from "@/content/data/about.json";
 ---
 
-<Default title="About">
-  <h1>About Me</h1>
-  <br />
-
-  <div class="pr-10">
-    {
-      paragraphs.map((paragraph) => (
-        <>
-          <p>{paragraph}</p>
-          <br />
-        </>
-      ))
-    }
-  </div>
-</Default>
+<PageLayout title="About" header="About Me">
+  {
+    paragraphs.map((paragraph) => (
+      <>
+        <p>{paragraph}</p>
+        <br />
+      </>
+    ))
+  }
+</PageLayout>

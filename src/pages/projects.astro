@@ -1,27 +1,21 @@
 ---
-import Default from "../layouts/Default.astro";
+import PageLayout from "../layouts/PageLayout.astro";
 import Project from "@/components/Project.astro";
 import { projects } from "@/content/data/projects.json";
 ---
 
-<Default title="Projects">
-  <h1>Projects</h1>
-
-  <br />
-  <br />
-  <div class="pr-10">
-    {
-      projects.map((project) => (
-        <>
-          <Project
-            name={project.name}
-            description={project.description}
-            href={project.link}
-          />
-          <br />
-          <br />
-        </>
-      ))
-    }
-  </div>
-</Default>
+<PageLayout title="Projects" header="Projects">
+  {
+    projects.map((project) => (
+      <>
+        <Project
+          name={project.name}
+          description={project.description}
+          href={project.link}
+        />
+        <br />
+        <br />
+      </>
+    ))
+  }
+</PageLayout>

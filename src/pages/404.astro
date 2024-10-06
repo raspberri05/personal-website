@@ -1,16 +1,11 @@
 ---
-import { Button } from "@/components/ui/button";
-import Default from "../layouts/Default.astro";
+import IndexLayout from "../layouts/IndexLayout.astro";
 ---
 
-<Default title="Home">
-  <div class="text-center">
-    <h1>404</h1>
-    <br />
-    <h2>Page Not Found</h2>
-    <br />
-    <a href="/">
-      <Button variant="link">Return to Home</Button>
-    </a>
-  </div>
-</Default>
+<IndexLayout
+  title="Home"
+  header="404 Error"
+  subheader="Page not found"
+  btntext="Go to homepage"
+  link="/"
+/>

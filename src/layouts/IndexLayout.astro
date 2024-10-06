@@ -1,0 +1,19 @@
+---
+import { Button } from "@/components/ui/button";
+import DefaultLayout from "./DefaultLayout.astro";
+const { title, header, subheader, btntext, link } = Astro.props;
+---
+
+<DefaultLayout title={title}>
+  <div
+    class="flex flex-col h-[75vh] text-center justify-center items-center pr-10 md:pr-0"
+  >
+    <div class="text-[5rem]">{header}</div>
+    <h1>{subheader}</h1>
+    <br />
+    <a href={link}>
+      <Button><p class="text-xl">{btntext}</p></Button>
+    </a>
+  </div>
+  <br />
+</DefaultLayout>
