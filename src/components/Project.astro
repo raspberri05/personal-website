@@ -1,0 +1,25 @@
+---
+import {
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle,
+  CardFooter,
+} from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+const { name, description, href } = Astro.props;
+---
+
+<Card>
+  <CardHeader>
+    <CardTitle>{name}</CardTitle>
+  </CardHeader>
+  <CardContent>
+    <p>{description}</p>
+  </CardContent>
+  <CardFooter>
+    <a href={href} target="_blank">
+      <Button variant="link">View on Github</Button>
+    </a>
+  </CardFooter>
+</Card>

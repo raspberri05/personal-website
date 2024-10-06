@@ -1,0 +1,19 @@
+{
+  "projects": [
+    {
+      "name": "Persona.fm",
+      "description": "A full stack Next.js application that uses the Last.FM API to show users snapshots of their listening habits.",
+      "link": "https://github.com/raspberri05/persona.fm"
+    },
+    {
+      "name": "QuickDev",
+      "description": "A node.js CLI tool that helps developer quickly setup a new project with a suite of commands",
+      "link": "https://github.com/raspberri05/quickdev"
+    },
+    {
+      "name": "ChairSense",
+      "description": "For wheelchair users, it can be hard to see what's behind the chair, especially when backing up or turning, which can be dangerous because there is a high potential to hit an object or person. The aim of this project is to solve that problem by creating a low-cost device that can detect obstacles and warn the wheelchair user so they don't hit objects or people.",
+      "link": "https://github.com/raspberri05/chairSense"
+    }
+  ]
+}

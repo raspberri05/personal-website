@@ -1,14 +1,15 @@
 ---
 import { Button } from "@/components/ui/button";
 import Default from "../layouts/Default.astro";
+import { name, tagline } from "@/content/data/index.json";
 ---
 
 <Default title="Home">
   <div
     class="flex flex-col h-[75vh] text-center justify-center items-center pr-10 md:pr-0"
   >
-    <div class="text-[5rem]">Naya Singhania</div>
-    <h1>CS @ SJSU | Fullstack Developer</h1>
+    <div class="text-[5rem]">{name}</div>
+    <h1>{tagline}</h1>
     <br />
     <a href="/about">
       <Button><p class="text-xl">About Me</p></Button>

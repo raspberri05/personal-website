@@ -1,7 +1,7 @@
 ---
-import { NavBar } from "@/components/NavBar";
-import { ModeToggle } from "@/components/ModeToggle";
-import { Footer } from "@/components/Footer";
+import NavBar from "@/components/NavBar.astro";
+import { ModeToggle } from "@/components/ui/ModeToggle";
+import Footer from "@/components/Footer.astro";
 
 import "@/styles/globals.css";
 import "@fontsource/roboto/500.css";
@@ -42,7 +42,7 @@ const { title } = Astro.props;
     <link rel="icon" href="/favicon.jpg" />
   </head>
   <body>
-    <NavBar client:load />
+    <NavBar />
     <hr />
     <div class="container mx-4 md:mx-auto min-h-[86vh]">
       <br />

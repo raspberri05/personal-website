@@ -1,0 +1,29 @@
+---
+import { social, copyright } from "@/content/data/footer.json";
+---
+
+<footer class="text-center">
+  <div class="flex justify-center gap-4">
+    {
+      social.map((social) => (
+        <>
+          <a href={social.link}>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              class={`bi bi-${social.icon}`}
+              viewBox="0 0 16 16"
+            >
+              <path d={social.path} />
+            </svg>
+          </a>
+        </>
+      ))
+    }
+  </div>
+  <br />
+  <p>{`Copyright ${new Date().getFullYear()} ${copyright.holder}`}</p>
+</footer>
+); }
