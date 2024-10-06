@@ -1,36 +1,36 @@
 {
-  "name": "website",
-  "type": "module",
-  "version": "0.0.1",
-  "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro check && astro build",
-    "preview": "astro preview",
-    "astro": "astro"
-  },
-  "dependencies": {
-    "@astrojs/check": "^0.9.4",
-    "@astrojs/react": "^3.6.2",
-    "@astrojs/tailwind": "^5.1.1",
-    "@fontsource/roboto": "^5.1.0",
-    "@radix-ui/react-dropdown-menu": "^2.1.2",
-    "@radix-ui/react-menubar": "^1.1.2",
-    "@radix-ui/react-slot": "^1.1.0",
-    "@types/react": "^18.3.11",
-    "@types/react-dom": "^18.3.0",
-    "astro": "^4.15.11",
-    "class-variance-authority": "^0.7.0",
-    "clsx": "^2.1.1",
-    "lucide-react": "^0.447.0",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "tailwind-merge": "^2.5.3",
-    "tailwindcss": "^3.4.13",
-    "tailwindcss-animate": "^1.0.7",
-    "typescript": "^5.6.2"
-  },
-  "devDependencies": {
-    "prettier": "^3.3.3"
-  }
+    "name": "website",
+    "type": "module",
+    "version": "0.0.1",
+    "scripts": {
+        "dev": "astro dev",
+        "start": "astro dev",
+        "build": "astro check && astro build",
+        "preview": "astro preview",
+        "astro": "astro"
+    },
+    "dependencies": {
+        "@astrojs/check": "^0.9.4",
+        "@astrojs/react": "^3.6.2",
+        "@astrojs/tailwind": "^5.1.1",
+        "@fontsource/roboto": "^5.1.0",
+        "@radix-ui/react-dropdown-menu": "^2.1.2",
+        "@radix-ui/react-menubar": "^1.1.2",
+        "@radix-ui/react-slot": "^1.1.0",
+        "@types/react": "^18.3.11",
+        "@types/react-dom": "^18.3.0",
+        "astro": "^4.15.11",
+        "class-variance-authority": "^0.7.0",
+        "clsx": "^2.1.1",
+        "lucide-react": "^0.447.0",
+        "react": "^18.3.1",
+        "react-dom": "^18.3.1",
+        "tailwind-merge": "^2.5.3",
+        "tailwindcss": "^3.4.13",
+        "tailwindcss-animate": "^1.0.7",
+        "typescript": "^5.6.2"
+    },
+    "devDependencies": {
+        "prettier": "^3.3.3"
+    }
 }

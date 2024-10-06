@@ -1,6 +1,7 @@
 ---
 import {NavBar} from '@/components/NavBar';
 import { ModeToggle } from '@/components/ModeToggle';
+import { Footer } from '@/components/Footer';
 
 import '@/styles/globals.css'
 import '@fontsource/roboto/500.css';
@@ -31,29 +32,19 @@ const { title } = Astro.props;
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{title}</title>
-    <meta name="description" content="Your page description here">
-    <link rel="icon" href="/path/to/favicon.ico">
-    <link rel="stylesheet" href="/path/to/styles.css">
-    <!-- Open Graph Tags -->
-    <meta property="og:title" content="{title}">
-    <meta property="og:description" content="Your page description here">
-    <meta property="og:image" content="/path/to/image.jpg">
-    <meta property="og:url" content="https://yourwebsite.com">
-    <!-- Twitter Card Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="{title}">
-    <meta name="twitter:description" content="Your page description here">
-    <meta name="twitter:image" content="/path/to/image.jpg">
+    <title>{`Naya Singhania | ${title}`}</title>
+    <meta name="description" content="My personal website">
+    <link rel="icon" href="/favicon.jpg">
   </head>
   <body>
     <NavBar client:load/>
-    <div class="container mx-auto">
+    <div class="container mx-4 md:mx-auto min-h-[90vh]">
       <br />
       <slot />
     </div>
     <div class="fixed bottom-4 right-4">
       <ModeToggle client:load/>
     </div>
+    <Footer />
   </body>
 </html>

@@ -7,11 +7,11 @@ import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://naya.singhania.com",
-  integrations: [
-    react(),
-    tailwind({
-      applyBaseStyles: false,
-    }),
-  ],
+    site: "https://naya.singhania.com",
+    integrations: [
+        react(),
+        tailwind({
+            applyBaseStyles: false,
+        }),
+    ],
 });
