@@ -6,7 +6,7 @@ Created using Astro with React and Tailwind with Shadcn, and deployed to Github 
 
 ## Local Development
 1. `npm run dev`
-2. `http://localhost:4321`
+2. Go to http://localhost:4321
 
 # Creating your own portfolio website
 
