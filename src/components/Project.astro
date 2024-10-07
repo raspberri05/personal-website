@@ -6,11 +6,13 @@ import {
   CardTitle,
   CardFooter,
 } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
+import LinkBtn from "./LinkBtn.astro";
 const { name, description, href } = Astro.props;
 ---
 
-<Card>
+<Card
+  className="dark:hover:bg-zinc-800 hover:bg-zinc-300 dark:bg-zinc-900 bg-zinc-200"
+>
   <CardHeader>
     <CardTitle>{name}</CardTitle>
   </CardHeader>
@@ -18,8 +20,6 @@ const { name, description, href } = Astro.props;
     <p>{description}</p>
   </CardContent>
   <CardFooter>
-    <a href={href} target="_blank">
-      <Button variant="link">View on Github</Button>
-    </a>
+    <LinkBtn text="View on Github" href={href} size="base" target="_blank" />
   </CardFooter>
 </Card>
