@@ -9,11 +9,22 @@ import sitemap from "@astrojs/sitemap";
 
 import partytown from "@astrojs/partytown";
 
+import clerk from "@clerk/astro";
+
+import node from "@astrojs/node";
+
+import { dark } from "@clerk/themes";
+
 // https://astro.build/config
 export default defineConfig({
   site: "https://naya.singhania.com",
   integrations: [
     react(),
+    clerk({
+      appearance: {
+        baseTheme: dark,
+      },
+    }),
     tailwind({
       applyBaseStyles: false,
     }),
@@ -24,4 +35,6 @@ export default defineConfig({
       },
     }),
   ],
+  adapter: node({ mode: "standalone" }),
+  output: "server",
 });
