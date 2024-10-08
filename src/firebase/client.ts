@@ -10,7 +10,7 @@ const firebaseConfig = {
   projectId: "raspberri05",
   storageBucket: "raspberri05.appspot.com",
   messagingSenderId: "950426477223",
-  appId: "1:950426477223:web:89282a84979f0d293cf182",
+  appId: "1:950426477223:web:39765b4b4aae502d3cf182",
 };
 
 // Initialize Firebase
