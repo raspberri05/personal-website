@@ -1,0 +1,17 @@
+---
+import PageLayout from "../layouts/PageLayout.astro";
+---
+
+<PageLayout title="Register" header="Register">
+  <h1>Register</h1>
+  <p>Already have an account? <a href="/signin">Sign in</a></p>
+  <form action="/api/auth/register" method="post">
+    <label for="name">Name</label>
+    <input type="text" name="name" id="name" />
+    <label for="email" for="email">Email</label>
+    <input type="email" name="email" id="email" />
+    <label for="password">Password</label>
+    <input type="password" name="password" id="password" />
+    <button type="submit">Create</button>
+  </form>
+</PageLayout>

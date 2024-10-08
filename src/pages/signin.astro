@@ -1,0 +1,68 @@
+---
+import { app } from "../firebase/server";
+import { getAuth } from "firebase-admin/auth";
+import PageLayout from "../layouts/PageLayout.astro";
+
+/* Check if the user is authenticated */
+const auth = getAuth(app);
+if (Astro.cookies.has("__session")) {
+  const sessionCookie = Astro.cookies.get("__session")?.value;
+  //@ts-ignore
+  const decodedCookie = await auth.verifySessionCookie(sessionCookie);
+  if (decodedCookie) {
+    return Astro.redirect("/dashboard");
+  }
+}
+---
+
+<PageLayout title="Sign In" header="Sign In">
+  <h1>Sign in</h1>
+  <p>New here? <a href="/register">Create an account</a></p>
+  <form action="/api/auth/signin" method="post">
+    <label for="email" for="email">Email</label>
+    <input type="email" name="email" id="email" />
+    <label for="password">Password</label>
+    <input type="password" name="password" id="password" />
+    <button type="submit">Login</button>
+  </form>
+</PageLayout>
+<script>
+  import {
+    getAuth,
+    inMemoryPersistence,
+    signInWithEmailAndPassword,
+  } from "firebase/auth";
+  import { app } from "../firebase/client";
+
+  const auth = getAuth(app);
+  // This will prevent the browser from storing session data
+  auth.setPersistence(inMemoryPersistence);
+
+  const form = document.querySelector("form") as HTMLFormElement;
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const formData = new FormData(form);
+    const email = formData.get("email")?.toString();
+    const password = formData.get("password")?.toString();
+
+    if (!email || !password) {
+      return;
+    }
+    const userCredential = await signInWithEmailAndPassword(
+      auth,
+      email,
+      password,
+    );
+    const idToken = await userCredential.user.getIdToken();
+    const response = await fetch("/api/auth/signin", {
+      method: "GET",
+      headers: {
+        Authorization: `Bearer ${idToken}`,
+      },
+    });
+
+    if (response.redirected) {
+      window.location.assign(response.url);
+    }
+  });
+</script>
