@@ -1,16 +1,7 @@
 ---
-import SignIn from "node_modules/@clerk/astro/components/interactive/SignIn.astro";
 import PageLayout from "../layouts/PageLayout.astro";
-import { SignedIn, SignedOut, UserProfile } from "@clerk/astro/components";
 ---
 
 <PageLayout title="admin" header="Administrator Dashboard">
-  <div class="flex justify-center">
-    <SignedOut>
-      <SignIn forceRedirectUrl="/admin" />
-    </SignedOut>
-    <SignedIn>
-      <UserProfile />
-    </SignedIn>
-  </div>
+  <div class="flex justify-center"></div>
 </PageLayout>
