@@ -15,6 +15,8 @@ import node from "@astrojs/node";
 
 import { dark } from "@clerk/themes";
 
+import vercel from "@astrojs/vercel/serverless";
+
 // https://astro.build/config
 export default defineConfig({
   site: "https://naya.singhania.com",
@@ -35,6 +37,6 @@ export default defineConfig({
       },
     }),
   ],
-  adapter: node({ mode: "standalone" }),
+  adapter: vercel(),
   output: "server",
 });
