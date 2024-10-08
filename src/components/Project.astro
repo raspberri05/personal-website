@@ -7,19 +7,34 @@ import {
   CardFooter,
 } from "@/components/ui/card";
 import LinkBtn from "./LinkBtn.astro";
-const { name, description, href } = Astro.props;
+const { name, description, href, ctext, clink, icons, date } = Astro.props;
 ---
 
 <Card
-  className="dark:hover:bg-zinc-800 hover:bg-zinc-300 dark:bg-zinc-900 bg-zinc-200"
+  className="dark:hover:bg-zinc-800 hover:bg-zinc-300 dark:bg-zinc-900 bg-zinc-2000"
 >
   <CardHeader>
     <CardTitle>{name}</CardTitle>
   </CardHeader>
   <CardContent>
     <p>{description}</p>
+    <p class="text-sm pt-2 text-zinc-600 dark:text-zinc-400">{date}</p>
+    <br />
+    <img
+      src=`https://skillicons.dev/icons?i=${icons}`
+      }
+      alt="Project Skills"
+      class="skills-icons"
+    />
   </CardContent>
   <CardFooter>
-    <LinkBtn text="View on Github" href={href} size="base" target="_blank" />
+    <LinkBtn
+      className="ml-[-10px]"
+      text="View on Github"
+      href={href}
+      size="base"
+      target="_blank"
+    />
+    {ctext && <LinkBtn text={ctext} href={clink} size="base" target="_blank" />}
   </CardFooter>
 </Card>

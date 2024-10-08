@@ -36,11 +36,13 @@ const { title } = Astro.props;
 
 <BaseLayout title={title}>
   <NavBar />
-  <div class="container mx-4 md:mx-auto min-h-[82vh]">
+  <br />
+  <div class="container mx-4 md:mx-auto min-h-[86vh]">
     <slot />
   </div>
   <div class="fixed bottom-4 right-4">
     <ModeToggle client:load />
   </div>
   <Footer />
+  <br />
 </BaseLayout>

@@ -5,13 +5,25 @@ import { paragraphs, resume } from "@/content/data/about.json";
 ---
 
 <PageLayout title="About" header="About Me">
-  {
-    paragraphs.map((paragraph) => (
-      <>
-        <p>{paragraph}</p>
-        <br />
-      </>
-    ))
-  }
-  <LinkBtn text="View Resume" href={resume} target="_blank" />
+  <div class="flex flex-col md:flex-row gap-6 items-center">
+    <div class="flex flex-col items-center">
+      <img
+        src="favicon.jpg"
+        alt="Profile Picture"
+        class="max-w-60 max-h-60 rounded-md"
+      />
+      <br />
+      <LinkBtn text="View Resume" href={resume} target="_blank" />
+    </div>
+    <div>
+      {
+        paragraphs.map((paragraph) => (
+          <>
+            <p>{paragraph}</p>
+            <br />
+          </>
+        ))
+      }
+    </div>
+  </div>
 </PageLayout>

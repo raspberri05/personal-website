@@ -9,3 +9,17 @@ const { title } = Astro.props;
   <meta name="description" content="My personal website" />
   <link rel="icon" href="/favicon.jpg" />
 </head>
+<!-- Google tag (gtag.js) -->
+<script
+  type="text/partytown"
+  async
+  src="https://www.googletagmanager.com/gtag/js?id=G-TFZL7HYSL7"></script>
+<script type="text/partytown">
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
+
+  gtag("config", "G-TFZL7HYSL7");
+</script>

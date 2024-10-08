@@ -69,6 +69,9 @@
   h2 {
     @apply text-3xl;
   }
+  h3 {
+    @apply text-2xl;
+  }
 }
 
 body {
@@ -78,4 +81,12 @@ body {
 html,
 body {
   overflow-x: hidden;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 0; /* Ensure it stays above other content */
 }

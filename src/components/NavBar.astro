@@ -3,7 +3,8 @@ import LinkBtn from "@/components/LinkBtn.astro";
 import { pages } from "@/content/data/navbar.json";
 ---
 
-<div class="flex justify-center gap-[10px] py-2">
+<div
+  class="navbar flex justify-center gap-[10px] py-2 z-50 dark:bg-zinc-950 bg-zinc-50"
+>
   {pages.map((page) => <LinkBtn href={page.link} text={page.name} size="lg" />)}
 </div>
-<hr />
