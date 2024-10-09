@@ -1,29 +1,25 @@
+// With `output: 'hybrid'` configured:
+// export const prerender = false;
 import type { APIRoute } from "astro";
-import { getAuth } from "firebase-admin/auth";
-import { app } from "../../../firebase/server";
+import { supabase } from "../../../lib/supabase";
 
 export const POST: APIRoute = async ({ request, redirect }) => {
-  const auth = getAuth(app);
-
-  /* Get form data */
   const formData = await request.formData();
   const email = formData.get("email")?.toString();
   const password = formData.get("password")?.toString();
-  const name = formData.get("name")?.toString();
 
-  if (!email || !password || !name) {
-    return new Response("Missing form data", { status: 400 });
+  if (!email || !password) {
+    return new Response("Email and password are required", { status: 400 });
   }
 
-  /* Create user */
-  try {
-    await auth.createUser({
-      email,
-      password,
-      displayName: name,
-    });
-  } catch (error: any) {
-    return new Response("Something went wrong", { status: 400 });
+  const { error } = await supabase.auth.signUp({
+    email,
+    password,
+  });
+
+  if (error) {
+    return new Response(error.message, { status: 500 });
   }
+
   return redirect("/signin");
 };

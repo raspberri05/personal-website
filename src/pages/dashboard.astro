@@ -1,26 +1,44 @@
 ---
-import { app } from "../firebase/server";
-import { getAuth } from "firebase-admin/auth";
 import PageLayout from "../layouts/PageLayout.astro";
+import { supabase } from "../lib/supabase";
 
-const auth = getAuth(app);
+const accessToken = Astro.cookies.get("sb-access-token");
+const refreshToken = Astro.cookies.get("sb-refresh-token");
 
-/* Check current session */
-if (!Astro.cookies.has("__session")) {
+if (!accessToken || !refreshToken) {
   return Astro.redirect("/signin");
 }
-const sessionCookie = Astro.cookies.get("__session")?.value;
-//@ts-ignore
-const decodedCookie = await auth.verifySessionCookie(sessionCookie);
-const user = await auth.getUser(decodedCookie.uid);
 
-if (!user) {
+let session;
+try {
+  session = await supabase.auth.setSession({
+    refresh_token: refreshToken.value,
+    access_token: accessToken.value,
+  });
+  if (session.error) {
+    Astro.cookies.delete("sb-access-token", {
+      path: "/",
+    });
+    Astro.cookies.delete("sb-refresh-token", {
+      path: "/",
+    });
+    return Astro.redirect("/signin");
+  }
+} catch (error) {
+  Astro.cookies.delete("sb-access-token", {
+    path: "/",
+  });
+  Astro.cookies.delete("sb-refresh-token", {
+    path: "/",
+  });
   return Astro.redirect("/signin");
 }
+
+const email = session.data.user?.email;
 ---
 
 <PageLayout title="Dashboard" header="Dashboard">
-  <h1>Welcome {user.displayName}</h1>
+  <h1>Welcome {email}</h1>
   <p>We are happy to see you here</p>
   <form action="/api/auth/signout">
     <button type="submit">Sign out</button>
