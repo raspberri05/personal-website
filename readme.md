@@ -6,10 +6,12 @@ Created using Astro with React and Tailwind with Shadcn, and deployed to Github 
 
 ## Local Development
 
+### Initial Setup
+
 1. `npm install` (only required for initial setup)
-2. `npm run dev`
-3. Go to http://localhost:4321
+2. Setup supabase [add supabase instructions]
 
-## Creating your own portfolio website
+### Running the code
 
-You can copy this template repository to create your own website, just update the information in `src/content` accordingly!
+1. `npm run dev`
+2. Go to http://localhost:4321
