@@ -1,12 +1,25 @@
 ---
 export const prerender = true;
+import Post from "@/components/Post.astro";
 import PageLayout from "../layouts/PageLayout.astro";
+import { posts } from "@/content/data/blog.json";
 ---
 
 <PageLayout title="Blog" header="My Blog">
-  <div>
-    <h2>🚧 Under Construction 🚧</h2>
-    <br />
-    <h3>Check back soon!</h3>
+  <div class="">
+    {
+      posts.map((project) => (
+        <>
+          <Post
+            title={project.title}
+            content={project.content}
+            date={project.date}
+            slug={`/blog/${project.slug}`}
+          />
+          <br />
+          <br />
+        </>
+      ))
+    }
   </div>
 </PageLayout>

@@ -1,0 +1,16 @@
+{
+  "posts": [
+    {
+      "title": "Blog Post 1",
+      "content": "This is the content of blog post 1",
+      "date": "2024-09-01",
+      "slug": "blog-post-1"
+    },
+    {
+      "title": "Blog Post 2",
+      "content": "This is the content of blog post 2",
+      "date": "2024-09-02",
+      "slug": "blog-post-2"
+    }
+  ]
+}

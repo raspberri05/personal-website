@@ -1,5 +1,7 @@
 User-agent: *
 Allow: /
 Disallow: /admin
+Disallow: /signin
+Disallow: /register
 
-Sitemap: https://nayasinghania.com/sitemap-0.xml
+Sitemap: https://www.nayasinghania.com/sitemap-0.xml

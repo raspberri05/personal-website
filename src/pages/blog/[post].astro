@@ -1,0 +1,16 @@
+---
+import { posts } from "../../content/data/blog.json";
+
+const { post } = Astro.params;
+const page = posts.find((page) => page.slug === post);
+if (!page) return Astro.redirect("/404");
+const { title, content, date } = page;
+import PageLayout from "../../layouts/PageLayout.astro";
+---
+
+<PageLayout title="Blog" header={title}>
+  <h3>{date}</h3>
+  <br />
+  <br />
+  <p>{content}</p>
+</PageLayout>

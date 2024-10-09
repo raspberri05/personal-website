@@ -1,0 +1,31 @@
+---
+import {
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle,
+  CardFooter,
+} from "@/components/ui/card";
+import LinkBtn from "./LinkBtn.astro";
+import readingTime from "reading-time";
+const { title, content, date, slug } = Astro.props;
+const { text: readingTimeText } = readingTime(content);
+---
+
+<Card
+  className="dark:hover:bg-zinc-800 hover:bg-zinc-300 dark:bg-zinc-900 bg-zinc-2000"
+>
+  <CardHeader>
+    <CardTitle>{title}</CardTitle>
+  </CardHeader>
+  <CardContent>
+    <p>{content}</p>
+    <p class="text-sm pt-2 text-zinc-600 dark:text-zinc-400">{date}</p>
+    <p class="text-sm pt-2 text-zinc-600 dark:text-zinc-400">
+      {readingTimeText}
+    </p>
+  </CardContent>
+  <CardFooter>
+    <LinkBtn className="ml-[-12px]" text="Read More" href={slug} size="base" />
+  </CardFooter>
+</Card>
