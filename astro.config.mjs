@@ -13,7 +13,7 @@ import vercelServerless from "@astrojs/vercel/serverless";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://naya.singhania.com",
+  site: "https://www.nayasinghania.com",
   integrations: [
     react(),
     tailwind({
