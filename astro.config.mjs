@@ -9,9 +9,7 @@ import sitemap from "@astrojs/sitemap";
 
 import partytown from "@astrojs/partytown";
 
-import node from "@astrojs/node";
-
-import vercel from "@astrojs/vercel/serverless";
+import vercelServerless from "@astrojs/vercel/serverless";
 
 // https://astro.build/config
 export default defineConfig({
@@ -28,6 +26,6 @@ export default defineConfig({
       },
     }),
   ],
-  adapter: vercel(),
+  adapter: vercelServerless(),
   output: "server",
 });
