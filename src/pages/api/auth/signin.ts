@@ -4,11 +4,12 @@ import { getAuth } from "firebase-admin/auth";
 
 export const GET: APIRoute = async ({ request, cookies, redirect }) => {
   const auth = getAuth(app);
-
+  console.log(app)
   /* Get token from request headers */
   const idToken = request.headers.get("Authorization")?.split("Bearer ")[1];
+  console.log(request)
   if (!idToken) {
-    return new Response("No token found"+request, { status: 401 });
+    return new Response("No token found", { status: 401 });
   }
 
   /* Verify id token */
