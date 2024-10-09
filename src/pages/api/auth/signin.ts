@@ -8,7 +8,7 @@ export const GET: APIRoute = async ({ request, cookies, redirect }) => {
   /* Get token from request headers */
   const idToken = request.headers.get("Authorization")?.split("Bearer ")[1];
   if (!idToken) {
-    return new Response("No token found", { status: 401 });
+    return new Response("No token found"+request, { status: 401 });
   }
 
   /* Verify id token */
