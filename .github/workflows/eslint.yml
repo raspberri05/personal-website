@@ -9,7 +9,7 @@ on:
       - main
 
 jobs:
-  format:
+  check:
     runs-on: ubuntu-latest
 
     steps:
