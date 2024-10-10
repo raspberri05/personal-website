@@ -1,8 +1,39 @@
 ---
-export const prerender = true;
+import type { InsertProject } from "@/db/schema";
 import PageLayout from "../layouts/PageLayout.astro";
 import Project from "@/components/Project.astro";
-import { projects } from "@/content/data/projects.json";
+import { AddProject } from "@/components/AddProject";
+import { supabase } from "../lib/supabase";
+
+const accessToken = Astro.cookies.get("sb-access-token");
+const refreshToken = Astro.cookies.get("sb-refresh-token");
+
+let session;
+try {
+  session = await supabase.auth.setSession({
+    refresh_token: refreshToken?.value || "",
+    access_token: accessToken?.value || "",
+  });
+} catch (error) {
+  return;
+}
+
+const email = session.data.user?.email;
+
+const isDev = import.meta.env.DEV;
+let url = "https://www.nayasinghania.com";
+if (isDev) {
+  url = "http://127.0.0.1:4321";
+}
+
+let projects: InsertProject[] = [];
+await fetch(`${url}/api/data/projects`).then((response) => {
+  return response.json().then((project) => {
+    for (let i in project) {
+      projects.push(project[i]);
+    }
+  });
+});
 ---
 
 <PageLayout title="Projects" header="Projects">
@@ -13,8 +44,8 @@ import { projects } from "@/content/data/projects.json";
           name={project.name}
           description={project.description}
           href={project.link}
-          ctext={project.custom?.text}
-          clink={project.custom?.link}
+          ctext={project.custom_text}
+          clink={project.custom_link}
           icons={project.icons}
           date={project.date}
         />
@@ -23,4 +54,5 @@ import { projects } from "@/content/data/projects.json";
       </>
     ))
   }
+  <AddProject client:load email={email || ""} />
 </PageLayout>
