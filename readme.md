@@ -2,7 +2,7 @@
 
 This the code for my portfolio website.
 
-Created using Astro with React and Tailwind with Shadcn, and deployed to Github Pages via Github Actions with a custom domain from Namecheap.
+Made with Astro, Tailwind, Shadcn, React, Supabase and deployed to Vercel with a domain name from Namecheap
 
 ## Local Development
 
