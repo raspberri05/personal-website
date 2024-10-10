@@ -20,7 +20,7 @@ export const POST: APIRoute = async ({ request, redirect }) => {
     .then((_) => {
       return redirect("/projects");
     })
-    .catch((e) => {
+    .catch((_) => {
       return redirect("/projects");
     });
 };

@@ -1,13 +1,13 @@
 ---
 import { SignIn } from "@/components/SignIn";
 import PageLayout from "../layouts/PageLayout.astro";
-const { cookies, redirect } = Astro;
+const { cookies } = Astro;
 
 const accessToken = cookies.get("sb-access-token");
 const refreshToken = cookies.get("sb-refresh-token");
 
 if (accessToken && refreshToken) {
-  return redirect("/admin");
+  return Astro.redirect("/admin");
 }
 ---
 

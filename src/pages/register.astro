@@ -1,8 +1,7 @@
 ---
 import PageLayout from "../layouts/PageLayout.astro";
 import { Register as RegisterComponent } from "@/components/Register";
-const { redirect } = Astro;
-return redirect("/signin");
+return Astro.redirect("/signin");
 ---
 
 <PageLayout title="Register" header="Register">
