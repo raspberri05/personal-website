@@ -1,15 +1,10 @@
 ---
 import PageLayout from "../layouts/PageLayout.astro";
+import { Register as RegisterComponent } from "@/components/Register";
+const { redirect } = Astro;
+return redirect("/signin");
 ---
 
 <PageLayout title="Register" header="Register">
-  <h1>Register</h1>
-  <p>Already have an account? <a href="/signin">Sign in</a></p>
-  <form action="/api/auth/register" method="post">
-    <label for="email">Email</label>
-    <input type="email" name="email" id="email" />
-    <label for="password">Password</label>
-    <input type="password" name="password" id="password" />
-    <button type="submit">Register</button>
-  </form>
+  <RegisterComponent client:load />
 </PageLayout>

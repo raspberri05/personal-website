@@ -23,7 +23,7 @@ const formSchema = z.object({
   }),
 });
 
-export function SignIn() {
+export function Register() {
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -33,7 +33,7 @@ export function SignIn() {
 
   return (
     <Form {...form}>
-      <form className="space-y-8" action="/api/auth/signin" method="post">
+      <form className="space-y-8" action="/api/auth/register" method="post">
         <FormField
           control={form.control}
           name="email"
@@ -60,7 +60,7 @@ export function SignIn() {
             </FormItem>
           )}
         />
-        <Button type="submit">Sign In</Button>
+        <Button type="submit">Register</Button>
       </form>
     </Form>
   );

@@ -33,6 +33,7 @@
     "clsx": "^2.1.1",
     "dotenv": "^16.4.5",
     "drizzle-orm": "^0.34.1",
+    "js-cookie": "^3.0.5",
     "lucide-react": "^0.447.0",
     "postgres": "^3.4.4",
     "react": "^18.3.1",
@@ -46,6 +47,7 @@
     "zod": "^3.23.8"
   },
   "devDependencies": {
+    "@types/js-cookie": "^3.0.6",
     "@typescript-eslint/parser": "^8.8.1",
     "drizzle-kit": "^0.25.0",
     "eslint": "^9.12.0",
