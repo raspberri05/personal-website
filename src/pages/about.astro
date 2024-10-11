@@ -3,13 +3,15 @@ export const prerender = true;
 import LinkBtn from "@/components/LinkBtn.astro";
 import PageLayout from "../layouts/PageLayout.astro";
 import { paragraphs, resume } from "@/content/data/about.json";
+import { Image } from "astro:assets";
+import favicon from "@/assets/favicon.jpg";
 ---
 
 <PageLayout title="About" header="About Me">
   <div class="flex flex-col md:flex-row gap-6 items-center">
     <div class="flex flex-col items-center">
-      <img
-        src="favicon.jpg"
+      <Image
+        src={favicon}
         alt="Square portrait of Naya Singhania"
         class="max-w-60 max-h-60 rounded-md"
       />
