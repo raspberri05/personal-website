@@ -11,9 +11,9 @@ if (isDev) {
 let projects: InsertProject[] = [];
 await fetch(`${url}/api/data/projects`).then(async (response) => {
   const project = await response.json();
-for (let i in project) {
-projects.push(project[i]);
-}
+  for (let i in project) {
+    projects.push(project[i]);
+  }
 });
 ---
 

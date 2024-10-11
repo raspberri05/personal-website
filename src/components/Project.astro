@@ -1,4 +1,5 @@
 ---
+import { Image } from "astro:assets";
 import {
   Card,
   CardContent,
@@ -20,8 +21,9 @@ const { name, description, href, ctext, clink, icons, date } = Astro.props;
     <p>{description}</p>
     <p class="text-sm pt-2 text-zinc-600 dark:text-zinc-400">{date}</p>
     <br />
-    <img
-      src=`https://skillicons.dev/icons?i=${icons}`
+    <Image
+      src={`https://skillicons.dev/icons?i=${icons}`}
+      inferSize
       alt="Project Skills"
       class="skills-icons"
     />
