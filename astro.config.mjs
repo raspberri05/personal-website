@@ -15,7 +15,7 @@ import vercelServerless from "@astrojs/vercel/serverless";
 export default defineConfig({
   site: "https://www.nayasinghania.com",
   image: {
-    domains: ["https://skillicons.dev"],
+    domains: ["skillicons.dev"],
   },
   integrations: [
     react(),
