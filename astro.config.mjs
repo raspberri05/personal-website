@@ -14,9 +14,6 @@ import vercelServerless from "@astrojs/vercel/serverless";
 // https://astro.build/config
 export default defineConfig({
   site: "https://www.nayasinghania.com",
-  image: {
-    domains: ["skillicons.dev"],
-  },
   integrations: [
     react(),
     tailwind({
