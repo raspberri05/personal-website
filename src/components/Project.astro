@@ -21,12 +21,21 @@ const { name, description, href, ctext, clink, icons, date } = Astro.props;
     <p>{description}</p>
     <p class="text-sm pt-2 text-zinc-600 dark:text-zinc-400">{date}</p>
     <br />
-    <Image
-      src={`https://skillicons.dev/icons?i=${icons}`}
-      inferSize
-      alt="Project Skills"
-      class="skills-icons"
-    />
+    <div class="flex gap-2">
+      {
+        icons
+          .split(",")
+          .map((icon: string) => (
+            <Image
+              src={`https://raw.githubusercontent.com/tandpfun/skill-icons/refs/heads/main/icons/${icon}.svg`}
+              width="48"
+              height="48"
+              alt="Project Skills"
+              class="skills-icons"
+            />
+          ))
+      }
+    </div>
   </CardContent>
   <CardFooter>
     <LinkBtn
