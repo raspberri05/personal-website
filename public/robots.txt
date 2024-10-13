@@ -3,5 +3,7 @@ Allow: /
 Disallow: /admin
 Disallow: /signin
 Disallow: /register
+Disallow: /blog
+Disallow: /blog/*
 
 Sitemap: https://www.nayasinghania.com/sitemap-0.xml

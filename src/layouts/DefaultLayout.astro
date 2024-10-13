@@ -1,7 +1,7 @@
 ---
-import NavBar from "@/components/NavBar.astro";
-import { ModeToggle } from "@/components/ModeToggle";
-import Footer from "@/components/Footer.astro";
+import NavBar from "@/components/molecules/NavBar.astro";
+import { ModeToggle } from "@/components/atoms/ModeToggle";
+import Footer from "@/components/atoms/Footer.astro";
 
 import "@/styles/globals.css";
 import "@fontsource/roboto/500.css";
@@ -37,7 +37,7 @@ const { title } = Astro.props;
 <BaseLayout title={title}>
   <NavBar />
   <br />
-  <div class="container mx-4 md:mx-auto min-h-[87vh]">
+  <div class="container mx-4 md:mx-auto min-h-[79vh]">
     <slot />
   </div>
   <div class="fixed bottom-4 right-4">

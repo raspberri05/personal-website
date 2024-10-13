@@ -1,7 +1,8 @@
 ---
 import { Button } from "@/components/ui/button";
-import PageLayout from "../layouts/PageLayout.astro";
-import { supabase } from "../lib/supabase";
+import PageLayout from "@/layouts/PageLayout.astro";
+import { supabase } from "@/lib/supabase";
+import AddProjectWrapper from "@/components/molecules/AddProjectWrapper.astro";
 
 const accessToken = Astro.cookies.get("sb-access-token");
 const refreshToken = Astro.cookies.get("sb-refresh-token");
@@ -39,9 +40,12 @@ const email = session.data.user?.email;
 ---
 
 <PageLayout title="Admin" header="Admin Dashboard">
-  <h3>Logged in as {email}</h3>
+  <h3>Welcome Back {email}!</h3>
   <br />
   <form action="/api/auth/signout">
     <Button type="submit">Sign out</Button>
   </form>
+  <br />
+
+  <AddProjectWrapper />
 </PageLayout>

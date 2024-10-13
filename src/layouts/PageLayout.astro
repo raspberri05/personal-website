@@ -1,15 +1,14 @@
 ---
-import DefaultLayout from "./DefaultLayout.astro";
+import DefaultLayout from "@/layouts/DefaultLayout.astro";
 const { title, header } = Astro.props;
 ---
 
 <DefaultLayout title={title}>
-  <br />
-  <br />
-  <h1>{header}</h1>
-  <br />
-  <br />
-  <div class="pr-10">
+  <div class="pr-10 md:pl-10">
+    <br />
+    <br />
+    <h1>{header}</h1>
+    <br />
     <slot />
   </div>
 </DefaultLayout>
