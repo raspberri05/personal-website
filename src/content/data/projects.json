@@ -15,9 +15,8 @@
       "name": "QuickDev",
       "description": "A node.js CLI tool that helps developer quickly setup a new project with a suite of commands",
       "link": "https://github.com/raspberri05/quickdev",
-      "date": "Fall 2024 - Present",
-      "icons": "nodejs,npm"
-    },
+      "date": "Fall 2024 - Present"
+        },
     {
       "name": "ChairSense",
       "description": "For wheelchair users, it can be hard to see what's behind the chair, especially when backing up or turning, which can be dangerous because there is a high potential to hit an object or person. The aim of this project is to solve that problem by creating a low-cost device that can detect obstacles and warn the wheelchair user so they don't hit objects or people.",
