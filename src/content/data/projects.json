@@ -15,7 +15,8 @@
       "name": "QuickDev",
       "description": "A node.js CLI tool that helps developer quickly setup a new project with a suite of commands",
       "link": "https://github.com/raspberri05/quickdev",
-      "date": "Fall 2024 - Present"
+      "date": "Fall 2024 - Present",
+      "icons": "NodeJS-Dark,Npm-Dark"
         },
     {
       "name": "ChairSense",
