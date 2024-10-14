@@ -9,7 +9,6 @@ import sitemap from "@astrojs/sitemap";
 
 import partytown from "@astrojs/partytown";
 
-import vercelServerless from "@astrojs/vercel/serverless";
 
 // https://astro.build/config
 export default defineConfig({
