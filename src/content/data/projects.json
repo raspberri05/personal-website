@@ -4,7 +4,7 @@
       "name": "Persona.fm",
       "description": "A full stack Next.js application that uses the Last.FM API to show users snapshots of their listening habits.",
       "link": "https://github.com/raspberri05/persona.fm",
-      "icons": "nextjs,tailwind,supabase",
+      "icons": "NextJS-Dark,TailwindCSS-Dark,Supabase-Dark",
       "date": "Summer 2024 - Present",
       "custom": {
         "text": "View live site",
@@ -22,14 +22,14 @@
       "name": "ChairSense",
       "description": "For wheelchair users, it can be hard to see what's behind the chair, especially when backing up or turning, which can be dangerous because there is a high potential to hit an object or person. The aim of this project is to solve that problem by creating a low-cost device that can detect obstacles and warn the wheelchair user so they don't hit objects or people.",
       "link": "https://github.com/raspberri05/chairSense",
-      "icons": "arduino,cpp",
+      "icons": "Arduino,CPP",
       "date": "Fall 2021"
     },
     {
       "name": "XKCD Bot",
       "description": "A discord bot that allows you to get the latest XKCD comic directly in discord!",
       "link": "https://github.com/raspberri05/xkcd-bot",
-      "icons": "py,bots",
+      "icons": "Python-Dark,DiscordBots",
       "date": "Summer 2024"
     }
   ]

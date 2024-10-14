@@ -1,31 +1,17 @@
 ---
-import type { InsertProject } from "@/db/schema";
+import { projects as p } from "@/content/data/projects.json";
 import Project from "@/components/molecules/Project.astro";
-
-const isDev = import.meta.env.DEV;
-let url = "https://www.nayasinghania.com";
-if (isDev) {
-  url = "http://127.0.0.1:4321";
-}
-
-let projects: InsertProject[] = [];
-await fetch(`${url}/api/data/projects`).then(async (response) => {
-  const project = await response.json();
-  for (let i in project) {
-    projects.push(project[i]);
-  }
-});
 ---
 
 {
-  projects.map((project) => (
+  p.map((project) => (
     <>
       <Project
         name={project.name}
         description={project.description}
         href={project.link}
-        ctext={project.custom_text}
-        clink={project.custom_link}
+        ctext={project.custom?.text}
+        clink={project.custom?.link}
         icons={project.icons}
         date={project.date}
       />

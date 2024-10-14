@@ -29,6 +29,4 @@ export default defineConfig({
       },
     }),
   ],
-  adapter: vercelServerless(),
-  output: "server",
 });
